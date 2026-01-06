@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/ben-maguire-FTYgqLeseI4-unsplash\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+header h1 {
+    color: #fff;
+    background-color:#301443;
+    font-size: 2.7rem;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(115,56,160,0.18);
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 22px 38px;
+    border-radius: 36px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 10px #924DBF;
+    font-weight: 700;
+    display: block;
+}
+
+header nav ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 950px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    background-color: #301443;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    background-color: #9E72C3;
+    cursor: pointer;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    min-height: 450px;
+    position: relative;
+    overflow: visible;
+    background-color: #4a2574;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 10px #9E72C3;
+}
+
+.flower {
+    margin-top: -100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+}
+
+.flower img {
+    width: 250px;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Envelope styles */
+.envelope {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.envelope-flap {
+    position: absolute;
+    top: -115%;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #924DBF;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    z-index: 3;
+    clip-path: polygon(0 0, 115% 0, 50% 100%, -15% 0);
+    box-shadow: 0 2px 8px rgba(115,56,160,0.10);
+    transform-origin:  bottom center;
+    transition: transform 1s cubic-bezier(.77,0,.18,1);
+}
+
+.envelope-front {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #9E72C3;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    z-index: 2;
+    box-shadow: 0 2px 8px 20px rgba(115,56,160,0.10);
+    transform: translateY(30%);
+}
+
+.letter-content {
+    left: 0;
+    bottom: 0;
+    transform: translateY(1%) scaleY(0.1);
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    background: #f3e9fa;
+    color: #7338A0;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(158,114,195,0.13);
+    padding: 24px 20px;
+    font-size: 1.13rem;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.7;
+    text-align: left;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 4;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin: 0;
+    transition: transform 0.7s cubic-bezier(.77,0,.18,1), opacity 0.4s;
+}
+
+.envelope.open .envelope-flap {
+    transform:  rotateX(60deg) translateY(-115px);
+    clip-path: polygon(0 0, 115% 0, 50% 10%, -15% 0);
+}
+
+.envelope.open .letter-content {
+    transform: translateY(-140px) scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 450px;
+    position: relative;
+    overflow: visible;
+    background-color: #4a2574;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 10px #9E72C3;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.heart img {
+    height: 420px;
+    border-radius: 20px;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.heart img.rotate {
+    transform: rotateY(180deg);
+}
+

@@ -1,0 +1,101 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/ben-maguire-FTYgqLeseI4-unsplash\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+header h1 {
+    color: #fff;
+    background-color:#a557d9;
+    font-size: 2.7rem;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(115,56,160,0.18);
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 22px 38px;
+    border-radius: 36px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 10px #924DBF;
+    font-weight: 700;
+    display: block;
+}
+
+header nav ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 950px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    background-color: #301443;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    background-color: #9E72C3;
+    cursor: pointer;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.music-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    min-height: 450px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(146, 77, 191, 0.5);
+    margin-top: 0;
+}
+
+.music-video h1 {
+    font-family: 'Pinyon Script', cursive;
+    color: #fff;
+    font-size: 36px;
+    text-shadow: 0 0 5px #924DBF, 0 0 15px #6B2496;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.music-video video {
+    border-radius: 20px;
+    height: 350px;
+}

@@ -1,0 +1,139 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/ben-maguire-FTYgqLeseI4-unsplash\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+header h1 {
+    color: #fff;
+    background-color:#301443;
+    font-size: 2.7rem;
+    margin: 10px;
+    text-shadow: 0 2px 8px rgba(115,56,160,0.18);
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 22px 38px;
+    border-radius: 36px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 10px #924DBF;
+    font-weight: 700;
+    display: block;
+}
+
+header nav ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 950px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    background-color: #301443;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    background-color: #9E72C3;
+    cursor: pointer;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.storage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.storage .you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    height: 650px;
+    background-color: rgba(115,56,160,0.5) ;
+    box-shadow: 0px 0px 10px 10px #924DBF;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 50px;
+}
+
+.storage .us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    height: 650px;
+    background-color: rgba(115,56,160,0.5) ;
+    box-shadow: 0px 0px 10px 10px #924DBF;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 50px;
+}
+
+
+.storage .you img {
+    height: 800px;
+    width: 575px;
+    margin: 30px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.storage .you img:nth-child(1) {
+    height: 775px;
+    width: 575px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.storage .us img {
+    height: 430px;
+    margin: 30px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.storage .us img:last-child {
+    height: 765px;
+    margin: 30px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
